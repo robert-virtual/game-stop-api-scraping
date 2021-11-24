@@ -1,3 +1,6 @@
+const { default: axios } = require("axios");
+const cheerio = require("cheerio");
+
 async function getProducts(url) {
   const resp = await axios.get(url);
   const html = resp.data;
